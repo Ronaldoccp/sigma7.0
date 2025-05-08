@@ -1,3 +1,87 @@
+# SIGMA - Sistema de Gestão de Materiais
+
+O SIGMA é um sistema de gestão de estoque e materiais desenvolvido para gerenciar e rastrear materiais utilizados por equipes de campo, permitindo controle de estoque, transferências entre equipes, gestão de reservas e relatórios detalhados.
+
+## Funcionalidades Principais
+
+### Gestão de Estoque e Materiais
+- Relatório de necessidades de materiais por equipe
+- Visualização de disponibilidade no almoxarifado
+- Rastreamento de entrega de materiais às equipes
+- Categorização de materiais (ativo, executado, em estoque)
+- Registro de execução de materiais (baixa)
+
+### Transferência de Materiais
+- Transferência de materiais entre equipes
+- Registro de equipe de origem e destino
+- Registro do responsável pela transferência
+- Histórico de transferências
+
+### Reservas de Materiais
+- Visualização detalhada de reservas
+- Filtro por Empresa, Regional e Projeto
+- Consulta por Centro de Custo ou Elemento PEP
+- Busca por número de reserva
+
+### Relatórios e Consultas
+- Importação de dados do SAP financeiro
+- Relatórios de equipes com materiais ativos
+- Histórico de materiais por equipe
+- Relatório comparativo de materiais executados
+
+## Tecnologias Utilizadas
+
+- React.js
+- Tailwind CSS
+- React Router
+- React Table
+- Chart.js
+- Heroicons
+
+## Instalação e Uso
+
+1. Clone o repositório:
+```
+git clone [URL_DO_REPOSITÓRIO]
+```
+
+2. Instale as dependências:
+```
+cd sigma-gestao-materiais
+npm install
+```
+
+3. Inicie a aplicação em modo de desenvolvimento:
+```
+npm start
+```
+
+A aplicação estará disponível em http://localhost:3000
+
+## Estrutura do Projeto
+
+```
+sigma-gestao-materiais/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── Layout/
+│   │       ├── Header.js
+│   │       ├── Layout.js
+│   │       └── Sidebar.js
+│   ├── pages/
+│   │   ├── Dashboard.js
+│   │   ├── EstoqueMateriais.js
+│   │   ├── TransferenciaMateriais.js
+│   │   ├── ReservasMateriais.js
+│   │   ├── RelatoriosConsultas.js
+│   │   └── NotFound.js
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+└── package.json
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
